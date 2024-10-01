@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+}
+
+$white: #E5F0E9;
+$black: #050A06;
+$lgreen: #9DDBB3;
+$mgreen: #268246;
+$green: #52D981;
+$greent: #52d9817d;
+
+$btop: solid 1px $mgreen;
+$bleft: solid 1px $mgreen;
+
+
+.dashboardContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #040404;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashHeader{
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+.boxContainer{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dashBox{
+
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.L{
+    width: 65%;
+    height: 55%;
+    background-color: $black;
+    border-radius: 20px;
+    border: solid 1px $mgreen;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+}
+.S{
+    width: 31%;
+    height: 55%;
+    background-color: $black;
+    border-radius: 20px;
+    border: solid 1px $mgreen;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+}
+.XS{
+    width: 25%;
+    height: 40%;
+}
+.M{
+    width: 35%;
+    height: 40%;
+    color: white;
+    border-radius: 20px;
+    border: solid 1px $mgreen;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+}
+.Mn{
+    width: 35%;
+    height: 40%;
+    color: white;
+    border-radius: 20px;
+}
+
+.dashLogo{
+    height: 52%;
+    margin: auto;
+}
+.statusButton{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+.Off{
+    background-color: red;
+}
+.On{
+    background-color: rgb(0, 255, 51);
+}
+.chartBox{
+    width: 65%;
+    height: 90%;
+    border: 0.5px solid $green;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chartTop{
+    height: 15%;
+    width: 100%;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: $mgreen;
+    display: flex;
+}
+.chart{
+    height: 85%;
+    width: 100%;
+}
+.chartDataBox{
+    width: 25%;
+    height: 85%;
+    background-color: $black;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 15px;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 800;
+}
+.Long{
+    width: 45%;
+    display: flex;
+}
+.datalong{
+    width: 100%;
+    height: 100%;
+    color: rgb(249, 249, 249);
+    text-align: center;
+    line-height: 2em;
+    font-size: 23px;
+    font-weight: 600;
+}
+// .datalongRight{
+//     width: 49.5%;
+//     height: 100%;
+//     color: rgb(0, 225, 37);
+//     text-align: center;
+//     line-height: 2em;
+//     font-size: 23px;
+//     font-weight: 600;
+// }
+.liveTradeTableBox{
+    width: 30%;
+    height: 90%;
+    border: 0.5px solid $green;
+    margin: auto;
+    border-radius: 20px;
+}
+.logBox{
+    width: 80%;
+    height: 45%;
+    border-left: solid 1px $mgreen;
+    border-top: solid 1px $mgreen;
+    border-radius: 12px;
+    margin: auto;
+}
+.consoleContent {
+    height: 70%;
+    overflow-y: auto; 
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+.console{
+    background-color: #52d98114;
+}
+.algo{
+    background-color: #ca7ae532;
+    border-left: solid 1px #CB7AE5;
+    border-top: solid 1px #CB7AE5;
+}
+.logBoxTitle{
+    width: 100%;
+    height: 14%;
+    text-align: center;
+    color: white;
+    font-size: 17;
+    line-height: 25px;
+    font-weight: lighter;
+}
+.balanceBox{
+    width: 90%;
+    height: 50%;
+    border: solid 1px $mgreen;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#050505;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+}
+.infoBox{
+    width: 80%;
+    height: 45%;
+    border: solid 1px $mgreen;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#050505;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+}
+.controlBox{
+        width: 100%;
+        height: 100%;
+        border: solid 1px $mgreen;
+        margin: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#050505;
+        -webkit-box-shadow: -25px 0px 62px -11px $greent;
+        -moz-box-shadow: -25px 0px 62px -11px $greent;
+        box-shadow: -25px 0px 52px -11px $greent;
+}
+.balanceHeading{
+    width: 90%;
+    height: 26%;
+    color: $lgreen;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: left;
+    line-height: 40px;
+    margin-left: 3%;
+}
+.balance{
+    width: 90%;
+    height: 20%;
+    line-height: 25px;
+    color: $lgreen;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.low{
+    height: 5%;
+}
+.balanceBottomLeft{
+    width: 50%;
+    height: 40%;
+    display: flex;
+}
+.balanceBottomRight{
+    width: 50%;
+    height: 40%;
+    display: flex;
+}
+.balanceAdded{
+    font-size: 12px;
+    color: $lgreen;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.transactionsButton{
+    width: 78%;
+    height: 65%;
+    border: none;
+    background-color: $lgreen;
+    color: black;
+    font-size: 18px;
+    margin: auto;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.statBox{
+    width: 28%;
+    height: 60%;
+    background-color: #52d9811e;
+    border-radius: 10px;
+    border-top: $btop;
+    border-left: $bleft;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.statCount{
+    width: 100%;
+    height: 60%;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 2em;
+}
+.statTitle{
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.pivotButton{
+    width: 40%;
+    height: 20%;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: $greent;
+    border: 2px solid $mgreen;
+    cursor: pointer;
+}
+.pivotOutput{
+    margin: auto;
+    width: 100%;
+    color: $lgreen;
+}
+.pivotBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $black;
+    border-radius: 15px;
+    border: 1px solid $mgreen;
+    -webkit-box-shadow: -25px 0px 62px -11px $greent;
+    -moz-box-shadow: -25px 0px 62px -11px $greent;
+    box-shadow: -25px 0px 52px -11px $greent;
+
+}
+.pivotHeading{
+    width: 100%;
+    color: wheat;
+}
+
+// .liveTradeTableBox {
+
+//   }
+  
+  .transactionTableHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: $mgreen;
+  }
+  
+  .transactionTitle {
+    width: 27%;
+    text-align: center;
+    border-radius: 8px;
+    background-color: $black;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 3px 5px;
+  }
+  
+  .transactionTable {
+    width: 100%;
+    height: 85.2%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-collapse: collapse;
+    display: flex;
+
+  }
+  
+  .transactionTable td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+  }
+  
+  .transactionTable tr:nth-child(odd) {
+    background-color: #035E08;
+    color: white;
+    font-weight: bold;
+    
+  }
+  
+  .transactionTable tr:nth-child(even) {
+    background-color: #ff2a2a;
+    color: white;
+  }
+  
+  .transactionTable tbody {
+    overflow: hidden;
+    display: block;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .transactionTable tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    
+    
+  }
+  .transactionTable td{
+    border: 1px solid #fefefe;
+  }
+  
+  
+  .realTimeChartBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pp{
+    color: rgb(255, 255, 255);
+  }
+  .pivotHeading{
+    color: white;
+  }
+  .pivotPoint{
+    color: white;
+    font-size: 12px;
+  }
